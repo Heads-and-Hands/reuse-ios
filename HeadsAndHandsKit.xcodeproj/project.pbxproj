@@ -7,28 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A542353520F39BB8004A2E23 /* HeadsAndHeadsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A542352B20F39BB8004A2E23 /* HeadsAndHeadsKit.framework */; };
-		A542353A20F39BB8004A2E23 /* HeadsAndHeadsKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A542353920F39BB8004A2E23 /* HeadsAndHeadsKitTests.swift */; };
-		A542353C20F39BB8004A2E23 /* HeadsAndHeadsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A542352E20F39BB8004A2E23 /* HeadsAndHeadsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A542353C20F39BB8004A2E23 /* HeadsAndHandsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A542352E20F39BB8004A2E23 /* HeadsAndHandsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A542354620F39C89004A2E23 /* HeadsAndHandsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A542354520F39C89004A2E23 /* HeadsAndHandsKit.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A542353620F39BB8004A2E23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A542352220F39BB8004A2E23 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A542352A20F39BB8004A2E23;
-			remoteInfo = HeadsAndHeadsKit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		A542352B20F39BB8004A2E23 /* HeadsAndHeadsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HeadsAndHeadsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A542352E20F39BB8004A2E23 /* HeadsAndHeadsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadsAndHeadsKit.h; sourceTree = "<group>"; };
+		A542352B20F39BB8004A2E23 /* HeadsAndHandsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HeadsAndHandsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A542352E20F39BB8004A2E23 /* HeadsAndHandsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadsAndHandsKit.h; sourceTree = "<group>"; };
 		A542352F20F39BB8004A2E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A542353420F39BB8004A2E23 /* HeadsAndHeadsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadsAndHeadsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A542353920F39BB8004A2E23 /* HeadsAndHeadsKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsAndHeadsKitTests.swift; sourceTree = "<group>"; };
-		A542353B20F39BB8004A2E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A542354520F39C89004A2E23 /* HeadsAndHandsKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsAndHandsKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,22 +26,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A542353120F39BB8004A2E23 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A542353520F39BB8004A2E23 /* HeadsAndHeadsKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A542352120F39BB8004A2E23 = {
 			isa = PBXGroup;
 			children = (
-				A542352D20F39BB8004A2E23 /* HeadsAndHeadsKit */,
-				A542353820F39BB8004A2E23 /* HeadsAndHeadsKitTests */,
+				A542352D20F39BB8004A2E23 /* HeadsAndHandsKit */,
 				A542352C20F39BB8004A2E23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,28 +40,19 @@
 		A542352C20F39BB8004A2E23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A542352B20F39BB8004A2E23 /* HeadsAndHeadsKit.framework */,
-				A542353420F39BB8004A2E23 /* HeadsAndHeadsKitTests.xctest */,
+				A542352B20F39BB8004A2E23 /* HeadsAndHandsKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A542352D20F39BB8004A2E23 /* HeadsAndHeadsKit */ = {
+		A542352D20F39BB8004A2E23 /* HeadsAndHandsKit */ = {
 			isa = PBXGroup;
 			children = (
-				A542352E20F39BB8004A2E23 /* HeadsAndHeadsKit.h */,
+				A542352E20F39BB8004A2E23 /* HeadsAndHandsKit.h */,
 				A542352F20F39BB8004A2E23 /* Info.plist */,
+				A542354520F39C89004A2E23 /* HeadsAndHandsKit.swift */,
 			);
-			path = HeadsAndHeadsKit;
-			sourceTree = "<group>";
-		};
-		A542353820F39BB8004A2E23 /* HeadsAndHeadsKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				A542353920F39BB8004A2E23 /* HeadsAndHeadsKitTests.swift */,
-				A542353B20F39BB8004A2E23 /* Info.plist */,
-			);
-			path = HeadsAndHeadsKitTests;
+			path = HeadsAndHandsKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,16 +62,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A542353C20F39BB8004A2E23 /* HeadsAndHeadsKit.h in Headers */,
+				A542353C20F39BB8004A2E23 /* HeadsAndHandsKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A542352A20F39BB8004A2E23 /* HeadsAndHeadsKit */ = {
+		A542352A20F39BB8004A2E23 /* HeadsAndHandsKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A542353F20F39BB8004A2E23 /* Build configuration list for PBXNativeTarget "HeadsAndHeadsKit" */;
+			buildConfigurationList = A542353F20F39BB8004A2E23 /* Build configuration list for PBXNativeTarget "HeadsAndHandsKit" */;
 			buildPhases = (
 				A542352620F39BB8004A2E23 /* Sources */,
 				A542352720F39BB8004A2E23 /* Frameworks */,
@@ -113,28 +82,10 @@
 			);
 			dependencies = (
 			);
-			name = HeadsAndHeadsKit;
+			name = HeadsAndHandsKit;
 			productName = HeadsAndHeadsKit;
-			productReference = A542352B20F39BB8004A2E23 /* HeadsAndHeadsKit.framework */;
+			productReference = A542352B20F39BB8004A2E23 /* HeadsAndHandsKit.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		A542353320F39BB8004A2E23 /* HeadsAndHeadsKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A542354220F39BB8004A2E23 /* Build configuration list for PBXNativeTarget "HeadsAndHeadsKitTests" */;
-			buildPhases = (
-				A542353020F39BB8004A2E23 /* Sources */,
-				A542353120F39BB8004A2E23 /* Frameworks */,
-				A542353220F39BB8004A2E23 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A542353720F39BB8004A2E23 /* PBXTargetDependency */,
-			);
-			name = HeadsAndHeadsKitTests;
-			productName = HeadsAndHeadsKitTests;
-			productReference = A542353420F39BB8004A2E23 /* HeadsAndHeadsKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -148,13 +99,11 @@
 				TargetAttributes = {
 					A542352A20F39BB8004A2E23 = {
 						CreatedOnToolsVersion = 9.4.1;
-					};
-					A542353320F39BB8004A2E23 = {
-						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
-			buildConfigurationList = A542352520F39BB8004A2E23 /* Build configuration list for PBXProject "HeadsAndHeadsKit" */;
+			buildConfigurationList = A542352520F39BB8004A2E23 /* Build configuration list for PBXProject "HeadsAndHandsKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,21 +115,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A542352A20F39BB8004A2E23 /* HeadsAndHeadsKit */,
-				A542353320F39BB8004A2E23 /* HeadsAndHeadsKitTests */,
+				A542352A20F39BB8004A2E23 /* HeadsAndHandsKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A542352920F39BB8004A2E23 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A542353220F39BB8004A2E23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,26 +135,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A542353020F39BB8004A2E23 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A542353A20F39BB8004A2E23 /* HeadsAndHeadsKitTests.swift in Sources */,
+				A542354620F39C89004A2E23 /* HeadsAndHandsKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A542353720F39BB8004A2E23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A542352A20F39BB8004A2E23 /* HeadsAndHeadsKit */;
-			targetProxy = A542353620F39BB8004A2E23 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A542353D20F39BB8004A2E23 /* Debug */ = {
@@ -339,6 +265,7 @@
 		A542354020F39BB8004A2E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.handh.HeadsAndHeadsKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +292,7 @@
 		A542354120F39BB8004A2E23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -386,46 +315,10 @@
 			};
 			name = Release;
 		};
-		A542354320F39BB8004A2E23 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X86NQK83T7;
-				INFOPLIST_FILE = HeadsAndHeadsKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.handh.HeadsAndHeadsKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A542354420F39BB8004A2E23 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X86NQK83T7;
-				INFOPLIST_FILE = HeadsAndHeadsKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.handh.HeadsAndHeadsKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A542352520F39BB8004A2E23 /* Build configuration list for PBXProject "HeadsAndHeadsKit" */ = {
+		A542352520F39BB8004A2E23 /* Build configuration list for PBXProject "HeadsAndHandsKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A542353D20F39BB8004A2E23 /* Debug */,
@@ -434,20 +327,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A542353F20F39BB8004A2E23 /* Build configuration list for PBXNativeTarget "HeadsAndHeadsKit" */ = {
+		A542353F20F39BB8004A2E23 /* Build configuration list for PBXNativeTarget "HeadsAndHandsKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A542354020F39BB8004A2E23 /* Debug */,
 				A542354120F39BB8004A2E23 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A542354220F39BB8004A2E23 /* Build configuration list for PBXNativeTarget "HeadsAndHeadsKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A542354320F39BB8004A2E23 /* Debug */,
-				A542354420F39BB8004A2E23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
