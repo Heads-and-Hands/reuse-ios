@@ -1,0 +1,51 @@
+BCSymbolMap Version: 2.0
+_swift_rt_swift_getExistentialTypeMetadata
+_swift_rt_swift_allocObject
+___swift_memcpy0_1
+___swift_noop_void_return
+__T016HeadsAndHandsKit0abaD0Owet
+__T016HeadsAndHandsKit0abaD0Owst
+__T016HeadsAndHandsKit0abaD0Owug
+__T016HeadsAndHandsKit0abaD0Owup
+__T016HeadsAndHandsKit0abaD0Owui
+_swift_rt_swift_slowAlloc
+_swift_rt_swift_slowDealloc
+__T0s23_ContiguousArrayStorageCyypGML
+__T0ypML
+__T016HeadsAndHandsKit0abaD0OWV
+__T016HeadsAndHandsKit0abaD0OMf
+__T016HeadsAndHandsKit0abaD0OMF
+__swift_FORCE_LOAD_$_swiftUIKit_$_HeadsAndHandsKit
+__swift_FORCE_LOAD_$_swiftFoundation_$_HeadsAndHandsKit
+__swift_FORCE_LOAD_$_swiftObjectiveC_$_HeadsAndHandsKit
+__swift_FORCE_LOAD_$_swiftDarwin_$_HeadsAndHandsKit
+__swift_FORCE_LOAD_$_swiftCoreFoundation_$_HeadsAndHandsKit
+__swift_FORCE_LOAD_$_swiftDispatch_$_HeadsAndHandsKit
+__swift_FORCE_LOAD_$_swiftCoreGraphics_$_HeadsAndHandsKit
+__swift_FORCE_LOAD_$_swiftCoreImage_$_HeadsAndHandsKit
+__swift_FORCE_LOAD_$_swiftMetal_$_HeadsAndHandsKit
+__swift_FORCE_LOAD_$_swiftQuartzCore_$_HeadsAndHandsKit
+___swift_reflection_version
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+-emit-bc /Users/sergey/Documents/Projects/HeadsAndHeadsKit/HeadsAndHandsKit/HeadsAndHandsKit.swift -target arm64-apple-ios11.4 -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk -I /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/BuildProductsPath/Release-iphoneos -F /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/BuildProductsPath/Release-iphoneos -g -import-underlying-module -module-cache-path /Users/sergey/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -swift-version 4 -O -serialize-debugging-options -Xcc -I/Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/HeadsAndHandsKit-generated-files.hmap -Xcc -I/Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/HeadsAndHandsKit-own-target-headers.hmap -Xcc -I/Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/HeadsAndHandsKit-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/all-product-headers.yaml -Xcc -iquote -Xcc /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/HeadsAndHandsKit-project-headers.hmap -Xcc -I/Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/BuildProductsPath/Release-iphoneos/include -Xcc -I/Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/DerivedSources/arm64 -Xcc -I/Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/DerivedSources -Xcc -ivfsoverlay -Xcc /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/unextended-module-overlay.yaml -Xcc -working-directory/Users/sergey/Documents/Projects/HeadsAndHeadsKit -emit-module-doc-path /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/Objects-normal/arm64/HeadsAndHandsKit.swiftdoc -serialize-diagnostics-path /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/Objects-normal/arm64/HeadsAndHandsKit.dia -parse-as-library -module-name HeadsAndHandsKit -emit-module-path /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/Objects-normal/arm64/HeadsAndHandsKit.swiftmodule -emit-objc-header-path /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/Objects-normal/arm64/HeadsAndHandsKit-Swift.h -emit-dependencies-path /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/Objects-normal/arm64/HeadsAndHandsKit.d -num-threads 4 -o /Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/Objects-normal/arm64/HeadsAndHandsKit.bc -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift
+<swift-imported-modules>
+/Users/sergey/Documents/Projects/HeadsAndHeadsKit
+Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)
+/Users/sergey/Documents/Projects/HeadsAndHeadsKit/HeadsAndHandsKit/HeadsAndHandsKit.swift
+_T016HeadsAndHandsKit0abaD0OMa
+HeadsAndHandsKit.swift
+/Users/sergey/Documents/Projects/HeadsAndHeadsKit/HeadsAndHandsKit
+get_field_types_HeadsAndHeadsKit
+_T016HeadsAndHandsKit0abaD0Owui
+_T016HeadsAndHandsKit0abaD0Owup
+_T016HeadsAndHandsKit0abaD0Owug
+_T016HeadsAndHandsKit0abaD0Owst
+_T016HeadsAndHandsKit0abaD0Owet
+__swift_noop_void_return
+__swift_memcpy0_1
+helloWorld
+_allocateUninitializedArray
+_T0Sa13_adoptStorageSayxG_SpyxGts016_ContiguousArrayB0CyxG_Si5counttFZyp_Tg5
+_T0s23_ContiguousArrayStorageCyypGMa
+_T0ypMa
+/Users/sergey/Library/Developer/Xcode/DerivedData/HeadsAndHandsKit-artzajhlragdzyfhdjslxfsolfvc/Build/Intermediates.noindex/ArchiveIntermediates/HeadsAndHandsKit/IntermediateBuildFilesPath/HeadsAndHandsKit.build/Release-iphoneos/HeadsAndHandsKit.build/DerivedSources/HeadsAndHandsKit_vers.c

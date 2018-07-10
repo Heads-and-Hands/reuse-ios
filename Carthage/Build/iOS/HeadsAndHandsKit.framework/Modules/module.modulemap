@@ -1,0 +1,11 @@
+framework module HeadsAndHandsKit {
+  umbrella header "HeadsAndHandsKit.h"
+
+  export *
+  module * { export * }
+}
+
+module HeadsAndHandsKit.Swift {
+    header "HeadsAndHandsKit-Swift.h"
+    requires objc
+}
