@@ -64,7 +64,7 @@ public extension LoginViewControllerProtocol where Self: UIViewController {
             completion(false, ReuseError.noInstantiating)
             return
         }
-        let url = URL(fileURLWithPath: "/auth.php", relativeTo: shared.baseURL)
+        let url = URL(string: "/auth.php", relativeTo: shared.baseURL)
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
 
