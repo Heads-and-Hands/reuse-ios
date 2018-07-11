@@ -46,6 +46,7 @@ public class ReuseConfiguration {
 
 public enum ReuseError: Error {
     case noInstantiating
+    case badURL
     case badParsing
     case noResponse
     case badResponse(code: Int)
@@ -64,7 +65,11 @@ public extension LoginViewControllerProtocol where Self: UIViewController {
             completion(false, ReuseError.noInstantiating)
             return
         }
-        let url = URL(string: "/auth.php", relativeTo: shared.baseURL)
+        guard let url = URL(string: "/auth.php", relativeTo: shared.baseURL) else {
+            completion(false, ReuseError.badURL)
+            return
+        }
+        
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
 
