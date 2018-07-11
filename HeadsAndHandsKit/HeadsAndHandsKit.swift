@@ -15,7 +15,7 @@ public enum HeadsAndHeadsKit {
 }
 
 public class Reuse {
-    static var shared: Reuse!
+    static var shared: Reuse?
     private let config: ReuseConfiguration
     private static let defaults = UserDefaults.standard
 
@@ -44,16 +44,27 @@ public class ReuseConfiguration {
     }
 }
 
+public enum ReuseError: Error {
+    case noInstantiating
+    case badParsing
+    case noResponse
+    case badResponse(code: Int)
+}
+
 public protocol LoginViewControllerProtocol {
-    var login: String { get set }
-    var password: String { get set }
+    var login: String { get }
+    var password: String { get }
 
     func logIn(completion: @escaping (Bool) -> Void)
 }
 
 public extension LoginViewControllerProtocol where Self: UIViewController {
-    public func logIn(completion: @escaping (Bool) -> Void) {
-        let url = URL(fileURLWithPath: "/auth", relativeTo: Reuse.shared.baseURL)
+    public func logIn(completion: @escaping (Bool, ReuseError?) -> Void) {
+        guard let shared = Reuse.shared else {
+            completion(false, ReuseError.noInstantiating)
+            return
+        }
+        let url = URL(fileURLWithPath: "/auth.php", relativeTo: shared.baseURL)
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
 
@@ -64,16 +75,17 @@ public extension LoginViewControllerProtocol where Self: UIViewController {
 
         request.httpBody = try! JSONSerialization.data(withJSONObject: params, options: [])
 
-        let task = Reuse.shared.session.dataTask(with: request) { data, response, error in
+        let task = shared.session.dataTask(with: request) { data, response, error in
             guard let response = response as? HTTPURLResponse else {
-                completion(false)
+                completion(false, ReuseError.noResponse)
                 return
             }
 
             if response.statusCode == 200 {
-                completion(true)
+                completion(true, nil)
+            } else {
+                completion(false, ReuseError.badResponse(code: response.statusCode))
             }
-
         }
 
         task.resume()
