@@ -44,14 +44,14 @@ public class ReuseConfiguration {
     }
 }
 
-protocol LoginViewControllerProtocol {
+public protocol LoginViewControllerProtocol {
     var login: String { get set }
     var password: String { get set }
 
     func logIn()
 }
 
-extension LoginViewControllerProtocol where Self: UIViewController {
+public extension LoginViewControllerProtocol where Self: UIViewController {
     func logIn(completion: @escaping (Bool) -> Void) {
         let url = URL(fileURLWithPath: "/auth", relativeTo: Reuse.shared.baseURL)
         var request = URLRequest(url: url)
