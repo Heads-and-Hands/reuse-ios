@@ -76,15 +76,17 @@ public extension LoginViewControllerProtocol where Self: UIViewController {
         request.httpBody = try! JSONSerialization.data(withJSONObject: params, options: [])
 
         let task = shared.session.dataTask(with: request) { data, response, error in
-            guard let response = response as? HTTPURLResponse else {
-                completion(false, ReuseError.noResponse)
-                return
-            }
+            DispatchQueue.main.async {
+                guard let response = response as? HTTPURLResponse else {
+                    completion(false, ReuseError.noResponse)
+                    return
+                }
 
-            if response.statusCode == 200 {
-                completion(true, nil)
-            } else {
-                completion(false, ReuseError.badResponse(code: response.statusCode))
+                if response.statusCode == 200 {
+                    completion(true, nil)
+                } else {
+                    completion(false, ReuseError.badResponse(code: response.statusCode))
+                }
             }
         }
 
