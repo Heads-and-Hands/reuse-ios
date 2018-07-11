@@ -55,7 +55,7 @@ public protocol LoginViewControllerProtocol {
     var login: String { get }
     var password: String { get }
 
-    func logIn(completion: @escaping (Bool) -> Void)
+    func logIn(completion: @escaping (Bool, ReuseError?) -> Void)
 }
 
 public extension LoginViewControllerProtocol where Self: UIViewController {
