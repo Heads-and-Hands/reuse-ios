@@ -52,7 +52,7 @@ public protocol LoginViewControllerProtocol {
 }
 
 public extension LoginViewControllerProtocol where Self: UIViewController {
-    func logIn(completion: @escaping (Bool) -> Void) {
+    public func logIn(completion: @escaping (Bool) -> Void) {
         let url = URL(fileURLWithPath: "/auth", relativeTo: Reuse.shared.baseURL)
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
