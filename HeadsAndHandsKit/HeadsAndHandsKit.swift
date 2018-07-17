@@ -43,11 +43,16 @@ public class Reuse {
     var minPasswordLength: Int {
         return config.minPassLength
     }
+
+    var isComplexPass: Bool {
+        return config.isComplexPass
+    }
 }
 
 struct Regex {
     static let email = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-    static let plainString = "[A-Z0-9a-z._%+-@!#$^*()_? ]"
+    static let plainString = "[A-Za-z0-9^]*"
+    static let complexPassword = "^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$"
 }
 
 public class ReuseConfiguration {
@@ -147,8 +152,11 @@ public extension LoginBehaviour {
         guard let shared = Reuse.shared else {
             return false
         }
-
-        return password.count >= shared.minPasswordLength
+        if shared.isComplexPass {
+            return NSPredicate(format: "SELF MATCHES %@", Regex.complexPassword).evaluate(with: password)
+        } else {
+            return password.count >= shared.minPasswordLength
+        }
     }
 }
 

@@ -1,0 +1,70 @@
+swagger: "2.0"
+
+info:
+  version: 1.0.0
+  title: Reuse Authentification API
+  description: A sample API for authentification
+
+host: dev.handh.ru
+schemes:
+  - http
+
+
+paths:
+  /auth.php:
+    post:
+      summary: "basic auth"
+      description: "Basic auth with login & pass"
+      parameters: 
+        - name: login
+          in: body
+          type: string
+          description: "login"
+          required: true
+          schema:
+            type: object
+            properties:
+              login:
+                type: string
+                example: admin
+              password:
+                type: string
+                example: admin
+      responses:
+        200:
+          description: fds
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+  /authPhone:
+    post:
+      summary: "basic auth"
+      description: "Basic auth with phone code"
+      parameters: 
+        - name: code
+          in: body
+          type: string
+          description: "code"
+          required: true
+          schema:
+            type: object
+            properties:
+              code:
+                type: string
+                example: "6666"
+              phone:
+                type: string
+                example: "79205556677"
+      responses:
+        200:
+          description: Success response
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+  
+
+      
